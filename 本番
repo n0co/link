@@ -1,0 +1,13 @@
+import webbrowser
+userLink = input("Paste your link here or type fin to termiante this process: ")
+end = 2
+
+f = open("linklog.txt", "a")
+f.write("Links: \n " +  userLink ) 
+f.close()
+
+if userLink == "fin":
+    print("Thank you for using this service. Have a good day :)")
+else:
+    print("===================------------------------")
+    webbrowser.open(userLink)
